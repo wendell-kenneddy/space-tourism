@@ -1,0 +1,209 @@
+.bgImage {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  background: url('/background-crew-mobile.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.mainContent {
+  width: 87.2vw;
+  margin: 2.4rem auto 10.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+
+  h1 {
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    span {
+      color: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+    }
+  }
+}
+
+.crewMemberInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.crewMemberImage {
+  border-bottom: 0.1rem solid #383b4b;
+  width: 100%;
+  height: 22.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.crewMemberContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.crewMemberSelector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  button {
+    background: rgba(255, 255, 255, 17.44%);
+    border: none;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+
+    &.active {
+      background: #fff;
+    }
+
+    &:not(.active):hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  h3 {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+
+    span {
+      font-family: 'Bellefair', serif;
+      color: rgba(255, 255, 255, 0.4951);
+    }
+  }
+
+  p {
+    font-family: 'Barlow Condensed';
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.5rem;
+    color: var(--gray);
+  }
+}
+
+@media (min-width: 768px) {
+  .bgImage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    background: url('/background-crew-tablet.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .mainContent {
+    margin: 4rem auto 0;
+    width: 89.97vw;
+
+    h1 {
+      align-self: flex-start;
+    }
+  }
+
+  .crewMemberInfo {
+    flex-direction: column-reverse;
+  }
+
+  .crewMemberContent {
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+
+  .crewMemberImage {
+    border-bottom: none;
+    width: 45.637rem;
+    height: 57.2rem;
+  }
+
+  .textContent {
+    max-width: 45.8rem;
+
+    h3 span {
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .bgImage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -99;
+    background: url('/background-crew-desktop.jpg') no-repeat center center
+      fixed;
+    background-size: cover;
+  }
+
+  .mainContent {
+    margin: 7.6rem auto 0;
+    width: 78.9vw;
+    align-items: flex-start;
+  }
+
+  .crewMemberInfo {
+    flex-direction: row-reverse;
+  }
+
+  .crewMemberImage {
+    width: 56.8rem;
+    height: 71.2rem;
+  }
+
+  .crewMemberContent {
+    align-items: flex-start;
+    gap: 12rem;
+  }
+
+  .crewMemberSelector button {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .textContent {
+    align-items: flex-start;
+
+    h3 {
+      align-items: flex-start;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 2560px) {
+  .crewMemberInfo {
+    align-self: center;
+  }
+}

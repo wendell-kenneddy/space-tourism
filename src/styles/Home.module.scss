@@ -1,0 +1,138 @@
+.bgImage {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  background: url('/background-home-mobile.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.mainContent {
+  width: 90vw;
+  max-width: 45rem;
+  margin: 4.8rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8.1rem;
+}
+
+.textContent {
+  max-width: 31.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  gap: 1.6rem;
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    text-transform: uppercase;
+
+    span {
+      color: var(--gray);
+    }
+  }
+
+  p {
+    line-height: 2.5rem;
+    text-align: center;
+    color: var(--gray);
+  }
+}
+
+.exploreBtn {
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  span {
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  &:hover::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 160%;
+    height: 160%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .bgImage {
+    background: url('/background-home-tablet.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .mainContent {
+    margin: 10.6rem auto;
+    gap: 15.6rem;
+  }
+
+  .textContent {
+    max-width: 45rem;
+
+    p {
+      line-height: 2.8rem;
+    }
+  }
+
+  .exploreBtn {
+    width: 24.2rem;
+    height: 24.2rem;
+  }
+
+  .textContent h1,
+  .textContent {
+    gap: 2.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bgImage {
+    background: url('/background-home-desktop.jpg') no-repeat center center
+      fixed;
+    background-size: cover;
+  }
+
+  .mainContent {
+    max-width: 111.1rem;
+    margin: 25.1rem auto 13.1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .textContent p {
+    text-align: left;
+  }
+
+  .textContent h1 {
+    align-items: flex-start;
+  }
+
+  .exploreBtn {
+    width: 27.4rem;
+    height: 27.4rem;
+    align-self: flex-end;
+  }
+}
