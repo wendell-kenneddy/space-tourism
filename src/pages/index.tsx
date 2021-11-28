@@ -6,6 +6,7 @@ import styles from '@styles/Home.module.scss';
 export default function Home() {
   const pageTitle = 'Space Tourism';
   const pageDescription = 'An outer space exploring experience.';
+  const pageUrl = 'https://spacetourismwk.vercel.app/';
 
   return (
     <>
@@ -16,10 +17,13 @@ export default function Home() {
         <meta property="og:site_name" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:locale" content="pt_BR" />
+        <meta property="og:url" content={pageUrl} />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={pageDescription} />
+        <meta property="twitter:url" content={pageUrl} />
         <title>{pageTitle}</title>
+        <link rel="canonical" href={pageUrl} />
       </Head>
 
       <div className={styles.bgImage}></div>
