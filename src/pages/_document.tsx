@@ -7,6 +7,14 @@ class MyDocument extends Document {
         <Head>
           <meta name="author" content="Wendell Kenneddy" />
           <meta name="creator" content="Wendell Kenneddy" />
+          <meta
+            property="og:image"
+            content="https://spacetourismwk.vercel.app/logo192.png"
+          />
+          <meta
+            property="twitter:image"
+            content="https://spacetourismwk.vercel.app/logo192.png"
+          />
           <link rel="icon" href="/logo.svg" type="image/svg+xml" sizes="any" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
