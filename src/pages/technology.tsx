@@ -31,6 +31,7 @@ export default function Technology({ technologies }: TechnologyProps) {
   const [imgUrl, setImgUrl] = useState('');
   const pageTitle = 'Space Tourism | Technology';
   const pageDescription = 'Information about the mission technologies.';
+  const pageUrl = 'https://spacetourismwk.vercel.app/technology';
 
   const selectTechnology = (id: number) => {
     if (currentTechnology.id == id) return;
@@ -56,10 +57,13 @@ export default function Technology({ technologies }: TechnologyProps) {
         <meta property="og:site_name" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:locale" content="pt_BR" />
+        <meta property="og:url" content={pageUrl} />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={pageDescription} />
+        <meta property="twitter:url" content={pageUrl} />
         <title>{pageTitle}</title>
+        <link rel="canonical" href={pageUrl} />
       </Head>
 
       <div className={styles.bgImage}></div>
