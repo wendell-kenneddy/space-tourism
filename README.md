@@ -29,7 +29,7 @@ To develop this app, I used these technologies:
 ## ✨ Features
 
 - Responsivity
-- (TODO): PWA Features
+- PWA Features, such as offline support
 
 ---
 
