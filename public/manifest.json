@@ -4,7 +4,7 @@
   "id": "space-tourism",
   "theme_color": "#0b0d17",
   "background_color": "#0b0d17",
-  "display": "standalone",
+  "display": "fullscreen",
   "orientation": "portrait-primary",
   "scope": "/",
   "start_url": "/",
