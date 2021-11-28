@@ -28,6 +28,7 @@ export default function Destination({ destinations }: DestinationPageProps) {
   );
   const pageTitle = 'Space Tourism | Destination';
   const pageDescription = 'Information about the destinations.';
+  const pageUrl = 'https://spacetourismwk.vercel.app/destination';
 
   const selectDestination = (id: number) => {
     if (currentDestination.id === id) return;
@@ -44,10 +45,13 @@ export default function Destination({ destinations }: DestinationPageProps) {
         <meta property="og:site_name" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:locale" content="pt_BR" />
+        <meta property="og:url" content={pageUrl} />
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={pageDescription} />
+        <meta property="twitter:url" content={pageUrl} />
         <title>{pageTitle}</title>
+        <link rel="canonical" href={pageUrl} />
       </Head>
 
       <div className={styles.bgImage}></div>
