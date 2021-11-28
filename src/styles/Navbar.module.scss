@@ -9,8 +9,7 @@
 }
 
 .menu {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(2rem);
+  background: #0b0e17;
   padding: 11.8rem 4.2rem 3.2rem;
   width: 25.4rem;
   height: 100%;
@@ -54,6 +53,14 @@ a .navBoldText {
   background: none;
   border: 0;
   cursor: pointer;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .menu {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    -webkit-backdrop-filter: blur(81.54);
+  }
 }
 
 @media (min-width: 768px) {
